@@ -1,0 +1,87 @@
+/* Header */
+.header {
+  width: 100%;
+  background: #ffffff;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.header-logo a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+/* Navigation Links */
+.header-nav a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #2563eb;
+}
+
+/* Logout Button */
+.header-nav button {
+  border: none;
+  background: #dc2626;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.header-nav button:hover {
+  background: #b91c1c;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-logo a {
+    font-size: 22px;
+  }
+
+  .header-nav a {
+    font-size: 14px;
+  }
+
+  .header-nav button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+}

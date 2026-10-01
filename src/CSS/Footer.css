@@ -1,0 +1,324 @@
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+  width: 100%;
+  margin-top: 70px;
+
+  background: #111827;
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   FOOTER CONTAINER
+===================================================== */
+
+.footer-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+
+  padding: 55px 0 45px;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+  gap: 45px;
+}
+
+
+/* =====================================================
+   FOOTER SECTIONS
+===================================================== */
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.footer-brand {
+  max-width: 300px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.footer-logo {
+  width: fit-content;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  letter-spacing: -0.5px;
+}
+
+.footer-logo span {
+  color: #818cf8;
+}
+
+
+/* =====================================================
+   BRAND TEXT
+===================================================== */
+
+.footer-brand p {
+  margin: 5px 0 10px;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.footer-section h3 {
+  margin: 0 0 9px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+.footer-section a {
+  width: fit-content;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #818cf8;
+
+  transform: translateX(3px);
+}
+
+
+/* =====================================================
+   FOOTER BUTTON
+===================================================== */
+
+.footer-section button {
+  width: fit-content;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-section button:hover {
+  color: #818cf8;
+
+  transform: translateX(3px);
+}
+
+
+/* =====================================================
+   SOCIAL ICONS
+===================================================== */
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 4px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #1f2937;
+
+  color: #e2e8f0;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background: #6366f1;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FOOTER BOTTOM
+===================================================== */
+
+.footer-bottom {
+  border-top: 1px solid #273244;
+}
+
+
+.footer-bottom-container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+
+  min-height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+/* =====================================================
+   COPYRIGHT
+===================================================== */
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   BOTTOM LINKS
+===================================================== */
+
+.footer-bottom-links {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-bottom-links a {
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #818cf8;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 35px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  .footer-container {
+    width: min(92%, 450px);
+
+    grid-template-columns: 1fr;
+
+    padding: 45px 0 35px;
+
+    gap: 30px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+
+  .footer-bottom-container {
+    width: min(92%, 450px);
+
+    padding: 18px 0;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 12px;
+  }
+
+  .footer-bottom-links {
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+}

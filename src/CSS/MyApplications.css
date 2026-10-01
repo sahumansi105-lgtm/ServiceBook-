@@ -1,0 +1,693 @@
+
+.my-applications-page {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  background: #f7f8fc;
+  color: #1f2937;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.applications-hero {
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background:
+    radial-gradient(
+      circle at 15% 30%,
+      rgba(124, 58, 237, 0.11),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(59, 130, 246, 0.10),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+
+.applications-hero-content {
+  max-width: 680px;
+}
+
+
+.applications-tag {
+  display: inline-block;
+  margin-bottom: 15px;
+  padding: 8px 13px;
+  border-radius: 25px;
+  background: #f1ebff;
+  color: #6d28d9;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+.applications-hero h1 {
+  margin: 0 0 15px;
+  color: #111827;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+
+.applications-hero p {
+  margin: 0;
+  max-width: 570px;
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+.applications-hero-icon {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+  background: linear-gradient(
+    145deg,
+    #f2eaff,
+    #ffffff
+  );
+  box-shadow:
+    0 25px 55px rgba(61, 35, 90, 0.10);
+  font-size: 65px;
+  transform: rotate(5deg);
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.application-stats {
+  max-width: 1180px;
+  margin: -30px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  position: relative;
+}
+
+
+.application-stat-card {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 13px;
+  align-items: center;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+
+.application-stat-icon {
+  grid-row: span 2;
+  width: 43px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #f3edff;
+  font-size: 18px;
+}
+
+
+.application-stat-card span {
+  color: #888;
+  font-size: 10px;
+}
+
+
+.application-stat-card strong {
+  margin-top: 3px;
+  color: #222;
+  font-size: 23px;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.applications-section {
+  max-width: 1180px;
+  margin: 75px auto 0;
+  padding: 0 20px;
+}
+
+
+.applications-section-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+
+.applications-section-header span {
+  color: #7c3aed;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+
+.applications-section-header h2 {
+  margin: 8px 0 6px;
+  color: #111827;
+  font-size: 32px;
+}
+
+
+.applications-section-header p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+
+.find-jobs-btn {
+  padding: 11px 17px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.application-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  transition: 0.25s ease;
+}
+
+
+.application-card:hover {
+  transform: translateY(-4px);
+  border-color: #ddd0ff;
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.07);
+}
+
+
+.application-card-top {
+  padding: 20px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.application-company-logo {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: #f1ebff;
+  color: #7c3aed;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+.application-status {
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+
+/* STATUS */
+
+.application-status-applied {
+  background: #fff7df;
+  color: #a16207;
+}
+
+
+.application-status-shortlisted {
+  background: #edfdf5;
+  color: #047857;
+}
+
+
+.application-status-interview {
+  background: #eef5ff;
+  color: #2563eb;
+}
+
+
+.application-status-selected {
+  background: #eaf8ef;
+  color: #15803d;
+}
+
+
+.application-status-rejected {
+  background: #fff0f0;
+  color: #dc2626;
+}
+
+
+.application-status-default {
+  background: #f3f3f3;
+  color: #666;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+.application-card-body {
+  padding: 20px;
+}
+
+
+.application-card-body h3 {
+  margin: 0 0 7px;
+  color: #111827;
+  font-size: 20px;
+}
+
+
+.application-company {
+  margin: 0 0 18px;
+  color: #7c3aed;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.application-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+
+.application-applicant {
+  margin-top: 18px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  background: #fafafa;
+  border-radius: 11px;
+}
+
+
+.application-applicant div,
+.application-meta div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.application-applicant small,
+.application-meta small {
+  color: #999;
+  font-size: 9px;
+}
+
+
+.application-applicant strong {
+  color: #333;
+  font-size: 11px;
+}
+
+
+/* =========================
+   META
+========================= */
+
+.application-meta {
+  margin-top: 14px;
+  padding-top: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  border-top: 1px solid #eeeeee;
+}
+
+
+.application-meta strong {
+  overflow: hidden;
+  color: #333;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.resume-view-btn {
+  padding: 0;
+  width: fit-content;
+  border: none;
+  background: transparent;
+  color: #6d28d9;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.application-card-footer {
+  margin-top: 18px;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eeeeee;
+}
+
+
+.application-card-footer span {
+  color: #999;
+  font-size: 9px;
+}
+
+
+.application-card-footer button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: #7c3aed;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.applications-loading {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.applications-loading p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+
+.applications-spinner {
+  width: 38px;
+  height: 38px;
+  border: 4px solid #eeeeee;
+  border-top-color: #7c3aed;
+  border-radius: 50%;
+  animation: applicationsSpin 0.8s linear infinite;
+}
+
+
+@keyframes applicationsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.applications-error-card {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 40px 25px;
+  text-align: center;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+}
+
+
+.applications-error-icon {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+
+.applications-error-card h3 {
+  margin: 0 0 8px;
+}
+
+
+.applications-error-card p {
+  margin: 0 0 20px;
+  color: #777;
+  font-size: 13px;
+}
+
+
+.applications-error-card button,
+.applications-empty button,
+.applications-login-card button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.applications-empty,
+.applications-login-card {
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 55px 25px;
+  text-align: center;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+}
+
+
+.applications-empty-icon {
+  margin-bottom: 15px;
+  font-size: 48px;
+}
+
+
+.applications-empty h2,
+.applications-login-card h2 {
+  margin: 0 0 10px;
+  color: #222;
+  font-size: 23px;
+}
+
+
+.applications-empty p,
+.applications-login-card p {
+  max-width: 430px;
+  margin: 0 auto 22px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.applications-cta {
+  max-width: 1140px;
+  margin: 75px auto 0;
+  padding: 40px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border-radius: 23px;
+  background: linear-gradient(
+    135deg,
+    #241635,
+    #4a2870
+  );
+  color: white;
+}
+
+
+.applications-cta span {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  opacity: 0.75;
+}
+
+
+.applications-cta h2 {
+  max-width: 600px;
+  margin: 9px 0;
+  font-size: 28px;
+}
+
+
+.applications-cta p {
+  max-width: 600px;
+  margin: 0;
+  color: #d9cfea;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+.applications-cta button {
+  min-width: 180px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 11px;
+  background: white;
+  color: #5b21b6;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+  .applications-hero {
+    padding: 60px 6%;
+  }
+
+  .applications-hero-icon {
+    width: 110px;
+    height: 110px;
+    font-size: 48px;
+  }
+
+  .application-stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -20px;
+  }
+
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .applications-cta {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .applications-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .applications-hero-icon {
+    align-self: center;
+  }
+
+  .application-stats {
+    grid-template-columns: 1fr;
+    padding: 0 5%;
+  }
+
+  .applications-section {
+    padding: 0 5%;
+  }
+
+  .applications-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .find-jobs-btn {
+    width: 100%;
+  }
+
+  .application-applicant,
+  .application-meta {
+    grid-template-columns: 1fr;
+  }
+
+  .applications-cta {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .applications-cta button {
+    width: 100%;
+  }
+}

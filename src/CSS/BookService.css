@@ -1,0 +1,191 @@
+/* Main Page */
+
+.booking-page {
+  min-height: calc(100vh - 70px);
+  background-color: #f5f7fb;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Booking Card */
+
+.booking-card {
+  width: 100%;
+  max-width: 650px;
+  background-color: white;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.booking-card h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+
+/* Selected Service */
+
+.selected-service {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: #f5f3ff;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  margin-bottom: 30px;
+}
+
+.selected-service-icon {
+  font-size: 45px;
+}
+
+.selected-service h2 {
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.selected-service p {
+  margin: 0 0 8px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.selected-service strong {
+  color: #4f46e5;
+}
+
+
+/* Form */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-weight: 600;
+
+  color: #333;
+}
+
+
+/* Input / Select / Textarea */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  box-sizing: border-box;
+
+  outline: none;
+
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+
+/* Confirm Button */
+
+.confirm-booking-btn {
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background-color: #4f46e5;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.confirm-booking-btn:hover {
+  background-color: #4338ca;
+}
+
+.confirm-booking-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+/* No Service Selected */
+
+.booking-card > button {
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background-color: #4f46e5;
+
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .booking-page {
+    padding: 20px 15px;
+  }
+
+  .booking-card {
+    padding: 25px 20px;
+  }
+
+  .selected-service {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .selected-service-icon {
+    font-size: 40px;
+  }
+
+}

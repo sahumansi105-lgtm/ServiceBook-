@@ -1,0 +1,570 @@
+.job-dashboard-page {
+  min-height: 100vh;
+  padding-bottom: 80px;
+  background: #f7f8fc;
+  color: #1f2937;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.job-dashboard-hero {
+  padding: 65px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background:
+    radial-gradient(
+      circle at 15% 25%,
+      rgba(124, 58, 237, 0.12),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.job-dashboard-hero > div:first-child {
+  max-width: 700px;
+}
+
+.job-dashboard-hero span {
+  color: #7c3aed;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.job-dashboard-hero h1 {
+  margin: 10px 0;
+  color: #111827;
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.05;
+}
+
+.job-dashboard-hero p {
+  margin: 0;
+  max-width: 580px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.dashboard-avatar {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #f1ebff;
+  color: #7c3aed !important;
+  font-size: 42px !important;
+  letter-spacing: 0 !important;
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.12);
+}
+
+
+/* =========================
+   ACTIONS
+========================= */
+
+.dashboard-actions {
+  max-width: 1160px;
+  margin: -25px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.dashboard-actions button {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  background: white;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-actions button:hover {
+  transform: translateY(-4px);
+  border-color: #d9caf1;
+}
+
+.dashboard-actions button > span {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #f3edff;
+  font-size: 20px;
+}
+
+.dashboard-actions button div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dashboard-actions strong {
+  color: #222;
+  font-size: 14px;
+}
+
+.dashboard-actions small {
+  color: #999;
+  font-size: 10px;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.dashboard-stats {
+  max-width: 1160px;
+  margin: 25px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.dashboard-stat-card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+}
+
+.dashboard-stat-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #f3edff;
+  font-size: 18px;
+}
+
+.dashboard-stat-card div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dashboard-stat-card span {
+  color: #999;
+  font-size: 10px;
+}
+
+.dashboard-stat-card strong {
+  color: #222;
+  font-size: 23px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.job-dashboard-content {
+  max-width: 1160px;
+  margin: 55px auto 0;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+
+/* PROFILE */
+
+.dashboard-profile-card,
+.recent-applications-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 18px;
+}
+
+.profile-card-heading span,
+.recent-heading span {
+  color: #7c3aed;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.profile-card-heading h2,
+.recent-heading h2 {
+  margin: 7px 0 0;
+  color: #111827;
+  font-size: 21px;
+}
+
+.profile-details {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details > div {
+  padding: 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.profile-details > div:last-child {
+  border-bottom: none;
+}
+
+.profile-details small {
+  color: #999;
+  font-size: 9px;
+}
+
+.profile-details strong {
+  color: #333;
+  font-size: 12px;
+  word-break: break-word;
+}
+
+
+/* RECENT */
+
+.recent-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.recent-heading button {
+  border: none;
+  background: transparent;
+  color: #7c3aed;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.recent-application-list {
+  margin-top: 20px;
+}
+
+.recent-application-item {
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: 45px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.recent-application-item:last-child {
+  border-bottom: none;
+}
+
+.recent-company-logo {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background: #f1ebff;
+  color: #7c3aed;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.recent-application-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.recent-application-info strong {
+  overflow: hidden;
+  color: #333;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recent-application-info span {
+  overflow: hidden;
+  color: #7c3aed;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recent-application-info small {
+  color: #999;
+  font-size: 9px;
+}
+
+.dashboard-status {
+  padding: 6px 9px;
+  border-radius: 15px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.dashboard-status-applied {
+  background: #fff7df;
+  color: #a16207;
+}
+
+.dashboard-status-shortlisted {
+  background: #edfdf5;
+  color: #047857;
+}
+
+.dashboard-status-interview {
+  background: #eef5ff;
+  color: #2563eb;
+}
+
+.dashboard-status-selected {
+  background: #eaf8ef;
+  color: #15803d;
+}
+
+.dashboard-status-rejected {
+  background: #fff0f0;
+  color: #dc2626;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.dashboard-loading {
+  min-height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 12px;
+}
+
+.dashboard-no-applications {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.dashboard-no-applications > div {
+  font-size: 42px;
+}
+
+.dashboard-no-applications h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.dashboard-no-applications p {
+  max-width: 400px;
+  margin: 0 auto 18px;
+  color: #777;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.dashboard-no-applications button {
+  padding: 11px 17px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.job-dashboard-login {
+  max-width: 500px;
+  margin: 120px auto;
+  padding: 45px 30px;
+  text-align: center;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+}
+
+.dashboard-login-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.job-dashboard-login h2 {
+  margin: 0 0 10px;
+}
+
+.job-dashboard-login p {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.job-dashboard-login button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.dashboard-cta {
+  max-width: 1120px;
+  margin: 60px auto 0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  border-radius: 22px;
+  background: linear-gradient(
+    135deg,
+    #241635,
+    #4a2870
+  );
+  color: white;
+}
+
+.dashboard-cta span {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  opacity: 0.75;
+}
+
+.dashboard-cta h2 {
+  max-width: 600px;
+  margin: 9px 0;
+  font-size: 27px;
+}
+
+.dashboard-cta p {
+  max-width: 600px;
+  margin: 0;
+  color: #d9cfea;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.dashboard-cta button {
+  min-width: 175px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 11px;
+  background: white;
+  color: #5b21b6;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .job-dashboard-content {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cta {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .job-dashboard-hero {
+    padding: 50px 6%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-avatar {
+    align-self: center;
+  }
+
+  .dashboard-actions {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    padding: 0 6%;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+    padding: 0 6%;
+  }
+
+  .job-dashboard-content {
+    padding: 0 6%;
+  }
+
+  .recent-application-item {
+    grid-template-columns: 43px 1fr;
+  }
+
+  .dashboard-status {
+    grid-column: 2;
+    width: fit-content;
+  }
+
+  .dashboard-cta {
+    margin-left: 6%;
+    margin-right: 6%;
+    padding: 30px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-cta button {
+    width: 100%;
+  }
+}

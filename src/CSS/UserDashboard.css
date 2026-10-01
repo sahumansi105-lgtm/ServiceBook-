@@ -1,0 +1,772 @@
+/* =====================================================
+   USER DASHBOARD
+===================================================== */
+
+.dashboard-page {
+  min-height: calc(100vh - 72px);
+  padding: 50px 7% 80px;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(120, 205, 255, 0.25),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 90% 30%,
+      rgba(80, 170, 255, 0.18),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #f4faff,
+      #eaf6ff,
+      #f8fcff
+    );
+
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   WELCOME SECTION
+===================================================== */
+
+.dashboard-welcome {
+  max-width: 1200px;
+
+  margin: 0 auto 35px;
+
+  padding: 40px 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 25px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e7f6ff,
+      #cceaff,
+      #a9d8ff
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+
+  box-shadow:
+    0 20px 45px rgba(20, 100, 180, 0.15),
+    inset 8px 8px 20px rgba(255, 255, 255, 0.8);
+
+}
+
+
+/* Decorative 3D orb */
+
+.dashboard-welcome::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  right: -80px;
+  top: -110px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      #ffffff,
+      #c5eaff 30%,
+      #5eb5ff 65%,
+      #0877dc 100%
+    );
+
+  opacity: 0.65;
+
+  box-shadow:
+    inset -20px -20px 40px rgba(0, 70, 160, 0.25),
+    inset 15px 15px 30px rgba(255, 255, 255, 0.9),
+    0 20px 50px rgba(0, 100, 220, 0.2);
+
+  animation: dashboardOrb 7s ease-in-out infinite;
+}
+
+
+@keyframes dashboardOrb {
+
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-20px, 20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+/* =====================================================
+   WELCOME TEXT
+===================================================== */
+
+.welcome-label {
+  margin: 0 0 8px;
+
+  color: #0874d1;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+}
+
+
+.dashboard-welcome h1 {
+  margin: 0 0 10px;
+
+  color: #092f55;
+
+  font-size: 38px;
+
+  font-weight: 800;
+}
+
+
+.dashboard-welcome p:last-child {
+  margin: 0;
+
+  color: #4c6d89;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================================
+   HOME ICON
+===================================================== */
+
+.dashboard-home-icon {
+  width: 125px;
+  height: 125px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 2;
+
+  border-radius: 50%;
+
+  font-size: 55px;
+
+  background:
+    radial-gradient(
+      circle at 30% 20%,
+      #ffffff,
+      #e1f5ff 40%,
+      #8bcbff 75%,
+      #3295eb 100%
+    );
+
+  border: 5px solid rgba(255, 255, 255, 0.75);
+
+  box-shadow:
+    inset -15px -15px 25px rgba(0, 80, 170, 0.2),
+    inset 10px 10px 20px rgba(255, 255, 255, 0.9),
+    0 18px 40px rgba(0, 100, 210, 0.22);
+
+  animation: iconFloat 4s ease-in-out infinite;
+}
+
+
+@keyframes iconFloat {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.dashboard-stats {
+  max-width: 1200px;
+
+  margin: 0 auto 55px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+}
+
+
+.stat-card {
+  padding: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #edf8ff
+    );
+
+  border: 1px solid #d3eaf9;
+
+  box-shadow:
+    0 12px 28px rgba(20, 90, 150, 0.1);
+
+  transition: all 0.3s ease;
+}
+
+
+.stat-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #8acaff;
+
+  box-shadow:
+    0 20px 40px rgba(20, 100, 190, 0.18);
+}
+
+
+.stat-icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  font-size: 27px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e1f4ff,
+      #bfe3ff
+    );
+
+  box-shadow:
+    6px 7px 15px rgba(30, 110, 190, 0.12),
+    inset 4px 4px 10px rgba(255, 255, 255, 0.9);
+}
+
+
+.stat-card h3 {
+  margin: 0 0 5px;
+
+  color: #086acb;
+
+  font-size: 28px;
+}
+
+
+.stat-card p {
+  margin: 0;
+
+  color: #6b8298;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   DASHBOARD SECTION
+===================================================== */
+
+.dashboard-section {
+  max-width: 1200px;
+
+  margin: 0 auto 55px;
+}
+
+
+.dashboard-section h2 {
+  margin: 0;
+
+  color: #102f52;
+
+  font-size: 30px;
+
+  font-weight: 800;
+}
+
+
+.dashboard-description {
+  margin: 8px 0 28px;
+
+  color: #71869b;
+
+  font-size: 15px;
+}
+
+
+/* =====================================================
+   QUICK ACTIONS
+===================================================== */
+
+.quick-actions {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+
+.action-card {
+  padding: 32px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #edf7ff
+    );
+
+  border: 1px solid #d3e9f8;
+
+  box-shadow:
+    0 14px 35px rgba(20, 90, 150, 0.1);
+
+  cursor: pointer;
+
+  transition: all 0.35s ease;
+}
+
+
+.action-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  right: -50px;
+  bottom: -55px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(90, 185, 255, 0.35),
+      transparent 70%
+    );
+}
+
+
+.action-card:hover {
+  transform: translateY(-10px);
+
+  border-color: #82c6ff;
+
+  box-shadow:
+    0 25px 50px rgba(20, 100, 190, 0.18);
+}
+
+
+.action-icon {
+  width: 68px;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 20px;
+
+  border-radius: 18px;
+
+  font-size: 32px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #dff3ff,
+      #ffffff
+    );
+
+  box-shadow:
+    7px 8px 18px rgba(30, 110, 190, 0.13),
+    inset 5px 5px 12px rgba(255, 255, 255, 0.95);
+}
+
+
+.action-card:hover .action-icon {
+  transform: scale(1.08) rotate(4deg);
+}
+
+
+.action-card h3 {
+  margin: 0 0 10px;
+
+  color: #153f69;
+
+  font-size: 21px;
+}
+
+
+.action-card p {
+  max-width: 450px;
+
+  margin: 0 0 22px;
+
+  color: #71869b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+.action-card button {
+  padding: 11px 20px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      145deg,
+      #48b2ff,
+      #0879e8
+    );
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 0 #075daf,
+    0 10px 20px rgba(0, 105, 220, 0.2);
+
+  transition: all 0.25s ease;
+}
+
+
+.action-card button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 0 #075daf,
+    0 15px 25px rgba(0, 105, 220, 0.3);
+}
+
+
+/* =====================================================
+   ACCOUNT INFORMATION
+===================================================== */
+
+.account-card {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #edf8ff
+    );
+
+  border: 1px solid #d4e9f7;
+
+  box-shadow:
+    0 12px 30px rgba(20, 90, 150, 0.09);
+}
+
+
+.account-item {
+  padding: 18px;
+
+  border-radius: 13px;
+
+  background: #f4faff;
+
+  border: 1px solid #e0f0fb;
+}
+
+
+.account-item span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #7890a6;
+
+  font-size: 13px;
+}
+
+
+.account-item strong {
+  display: block;
+
+  color: #234b70;
+
+  font-size: 15px;
+
+  word-break: break-word;
+}
+
+
+/* =====================================================
+   BOTTOM CTA
+===================================================== */
+
+.dashboard-cta {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 35px 40px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  color: white;
+
+  background:
+    radial-gradient(
+      circle at 85% 30%,
+      rgba(120, 210, 255, 0.45),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #07509d,
+      #087be4,
+      #39aaff
+    );
+
+  box-shadow:
+    0 20px 45px rgba(0, 80, 160, 0.25);
+}
+
+
+.dashboard-cta::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -60px;
+  bottom: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+.dashboard-cta h2 {
+  margin: 0 0 8px;
+
+  font-size: 25px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+.dashboard-cta p {
+  margin: 0;
+
+  color: #e2f4ff;
+
+  font-size: 14px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+.dashboard-cta button {
+  padding: 13px 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  color: #075dcc;
+
+  background: white;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 2;
+
+  box-shadow:
+    0 6px 0 #d1e5f5,
+    0 12px 25px rgba(0, 40, 100, 0.22);
+
+  transition: all 0.3s ease;
+}
+
+
+.dashboard-cta button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 0 #d1e5f5,
+    0 20px 35px rgba(0, 40, 100, 0.3);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .dashboard-page {
+    padding: 40px 5% 70px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 32px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .dashboard-page {
+    padding: 30px 20px 60px;
+  }
+
+  .dashboard-welcome {
+    padding: 30px 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 28px;
+  }
+
+  .dashboard-home-icon {
+    width: 90px;
+    height: 90px;
+
+    font-size: 40px;
+
+    align-self: center;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .account-card {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    padding: 30px 25px;
+  }
+}

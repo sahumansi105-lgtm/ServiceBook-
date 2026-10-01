@@ -1,0 +1,503 @@
+
+.apply-job-page {
+  min-height: 100vh;
+  padding: 45px 6% 80px;
+  background: #f7f8fc;
+  color: #1f2937;
+}
+
+.apply-job-container {
+  max-width: 1180px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.apply-job-sidebar {
+  position: sticky;
+  top: 25px;
+}
+
+.back-job-btn {
+  border: none;
+  background: transparent;
+  color: #6d28d9;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 5px 0 18px;
+}
+
+
+.job-apply-summary {
+  padding: 30px;
+  background: linear-gradient(
+    145deg,
+    #241635,
+    #49266d
+  );
+  border-radius: 24px;
+  color: white;
+  box-shadow: 0 20px 45px rgba(46, 25, 72, 0.16);
+}
+
+.application-tag {
+  display: inline-block;
+  padding: 7px 11px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e7d9ff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+.apply-company-logo {
+  width: 68px;
+  height: 68px;
+  margin: 23px 0 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+
+.job-apply-summary h1 {
+  margin: 0 0 8px;
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+
+.job-apply-summary h3 {
+  margin: 0 0 20px;
+  color: #ddc9fb;
+  font-size: 14px;
+}
+
+
+.apply-job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  color: #e2d9ea;
+  font-size: 12px;
+}
+
+
+.apply-divider {
+  height: 1px;
+  margin: 25px 0;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+
+.job-apply-summary h4 {
+  margin: 0 0 13px;
+  font-size: 13px;
+}
+
+
+.apply-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+
+.apply-skills span {
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #eee5fa;
+  font-size: 10px;
+}
+
+
+/* =========================
+   APPLICATION PROCESS
+========================= */
+
+.application-process {
+  margin-top: 28px;
+}
+
+
+.application-process h4 {
+  margin-bottom: 16px;
+}
+
+
+.process-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+
+
+.process-step span {
+  width: 25px;
+  height: 25px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.process-step p {
+  margin: 0;
+  color: #dcd0e9;
+  font-size: 11px;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.application-form-card {
+  padding: 38px;
+  background: white;
+  border: 1px solid #ececf1;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+}
+
+
+.application-form-header {
+  padding-bottom: 24px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+
+.application-form-header span {
+  color: #7c3aed;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+
+.application-form-header h2 {
+  margin: 8px 0;
+  color: #111827;
+  font-size: 30px;
+}
+
+
+.application-form-header p {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+
+.form-group label {
+  color: #333;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #dedee5;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #333;
+  font-family: inherit;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #9b6bea;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.08);
+}
+
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+
+.form-group small {
+  color: #999;
+  font-size: 10px;
+}
+
+
+/* =========================
+   RESUME UPLOAD
+========================= */
+
+.resume-upload-box {
+  position: relative;
+  min-height: 85px;
+  padding: 17px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1.5px dashed #cfc5df;
+  border-radius: 13px;
+  background: #fbfaff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+.resume-upload-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #f0eaff;
+  font-size: 21px;
+}
+
+
+.resume-upload-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.resume-upload-content strong {
+  color: #333;
+  font-size: 13px;
+}
+
+
+.resume-upload-content span {
+  color: #999;
+  font-size: 10px;
+}
+
+
+.selected-resume {
+  color: #6d28d9 !important;
+  font-weight: 700;
+}
+
+
+.resume-upload-box input[type="file"] {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+/* =========================
+   ERRORS
+========================= */
+
+.application-error {
+  color: #dc2626;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+.submit-application-btn {
+  width: 100%;
+  margin-top: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  border-radius: 11px;
+  background: #7c3aed;
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(124, 58, 237, 0.18);
+  transition: 0.25s ease;
+}
+
+
+.submit-application-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 17px 30px rgba(124, 58, 237, 0.24);
+}
+
+
+.submit-application-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+.button-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: applySpin 0.7s linear infinite;
+}
+
+
+@keyframes applySpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.application-note {
+  margin: 0;
+  color: #999;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   JOB NOT FOUND
+========================= */
+
+.application-not-found {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 45px 30px;
+  text-align: center;
+  background: white;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+}
+
+
+.not-found-icon {
+  margin-bottom: 15px;
+  font-size: 45px;
+}
+
+
+.application-not-found h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+
+.application-not-found p {
+  margin: 0 0 20px;
+  color: #777;
+  font-size: 13px;
+}
+
+
+.application-not-found button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #7c3aed;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .apply-job-container {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-job-sidebar {
+    position: static;
+  }
+
+  .job-apply-summary {
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .apply-job-page {
+    padding: 25px 5% 60px;
+  }
+
+  .application-form-card {
+    padding: 25px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .application-form-header h2 {
+    font-size: 25px;
+  }
+
+  .job-apply-summary {
+    padding: 25px;
+  }
+}

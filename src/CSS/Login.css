@@ -1,0 +1,340 @@
+
+/* =====================================================
+   LOGIN PAGE
+===================================================== */
+
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    135deg,
+    #f5f7ff 0%,
+    #eef2ff 50%,
+    #f8f9ff 100%
+  );
+}
+
+
+/* =====================================================
+   LOGIN FORM
+===================================================== */
+
+.login-form {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  padding: 38px 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(30, 41, 59, 0.12);
+  border: 1px solid #e8eaf0;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.login-form h2 {
+  margin: 0 0 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+
+/* =====================================================
+   JOURNEY MESSAGE
+===================================================== */
+
+.login-journey-text {
+  margin: 0 0 25px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+
+/* =====================================================
+   INPUT GROUP
+===================================================== */
+
+.input-group {
+  width: 100%;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+
+/* =====================================================
+   LOGIN AS LABEL
+===================================================== */
+
+.login-role-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+
+/* =====================================================
+   INPUTS + SELECT
+===================================================== */
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  border: 1px solid #d7dce5;
+  border-radius: 10px;
+
+  background: #ffffff;
+  color: #1e293b;
+
+  font-size: 15px;
+  font-family: inherit;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+
+/* =====================================================
+   PLACEHOLDER
+===================================================== */
+
+.login-form input::placeholder {
+  color: #94a3b8;
+}
+
+
+/* =====================================================
+   INPUT FOCUS
+===================================================== */
+
+.login-form input:focus,
+.login-form select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.login-form select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+
+/* =====================================================
+   SELECT OPTION
+===================================================== */
+
+.login-form select option {
+  color: #1e293b;
+  background: #ffffff;
+}
+
+
+/* =====================================================
+   DISABLED INPUT
+===================================================== */
+
+.login-form input:disabled,
+.login-form select:disabled {
+  cursor: not-allowed;
+  background: #f8fafc;
+  color: #94a3b8;
+}
+
+
+/* =====================================================
+   ERROR TEXT
+===================================================== */
+
+.error-text {
+  display: block;
+  margin-top: 6px;
+  padding-left: 2px;
+
+  font-size: 13px;
+  line-height: 1.4;
+
+  color: #dc2626;
+}
+
+
+/* =====================================================
+   FORGOT PASSWORD
+===================================================== */
+
+.frm2 {
+  display: block;
+  margin: -3px 0 20px;
+
+  text-align: right;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  color: #6366f1;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.frm2:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   LOGIN BUTTON
+===================================================== */
+
+.login-form > button {
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #4f46e5
+  );
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.login-form > button:hover:not(:disabled) {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 18px rgba(79, 70, 229, 0.25);
+}
+
+
+.login-form > button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+
+.login-form > button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+/* =====================================================
+   REGISTER TEXT
+===================================================== */
+
+.frm1 {
+  margin: 22px 0 0;
+
+  text-align: center;
+
+  font-size: 14px;
+  color: #64748b;
+}
+
+
+.frm1 a {
+  margin-left: 4px;
+
+  color: #6366f1;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+.frm1 a:hover {
+  color: #4f46e5;
+  text-decoration: underline;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px 15px;
+  }
+
+  .login-form {
+    padding: 30px 22px;
+    border-radius: 15px;
+  }
+
+  .login-form h2 {
+    font-size: 26px;
+  }
+
+  .login-journey-text {
+    font-size: 13px;
+  }
+
+  .login-form input,
+  .login-form select,
+  .login-form > button {
+    height: 48px;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 380px) {
+  .login-form {
+    padding: 25px 18px;
+  }
+
+  .login-form h2 {
+    font-size: 24px;
+  }
+
+  .login-form input,
+  .login-form select {
+    font-size: 14px;
+  }
+}
